@@ -1,0 +1,29 @@
+.movie-list-app .search-wrapper .search {
+  width: 100%;
+  height: 40px;
+  display: flex;
+}
+.movie-list-app .search-wrapper .search .search-input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #00b4cc;
+  border-right: none;
+  padding: 5px;
+  border-radius: 10px 0 0 10px;
+  outline: none;
+  transition: all 0.3s;
+}
+.movie-list-app .search-wrapper .search .search-input:focus {
+  box-shadow: 0 0 5px 0 #00b4cc;
+}
+.movie-list-app .search-wrapper .search .search-button {
+  width: 40px;
+  height: 100%;
+  border: 1px solid #00b4cc;
+  background: #00b4cc;
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
