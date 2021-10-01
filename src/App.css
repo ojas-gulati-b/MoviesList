@@ -5,9 +5,18 @@ body {
   margin: 0;
   background-color: #f5f5f5;
   font-family: "Open Sans", sans-serif;
+  font-size: 14px;
 }
 .wrapper {
   margin: auto;
   padding: 0 30px;
-  max-width: 1240px;
+  max-width: 840px;
+}
+.movie-list-app h1{
+  color: #ffb703;
+  text-align: center;
+}
+.movie-list-app .error{
+  color: orangered;
+  text-align: center;
 }
