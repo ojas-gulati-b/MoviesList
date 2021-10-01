@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import MovieList from './components/Movie/MoviesList/MoviesList';
 import Search from './components/Common/Search/Search';
-import Loader from './components/Common/Spinner/Loader';
+import Loader from './components/Common/Loader/Loader';
 
 const App = () => {
   const [movies, setMovies] = useState([]);
