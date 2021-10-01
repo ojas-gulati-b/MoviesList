@@ -12,11 +12,12 @@ body {
   padding: 0 30px;
   max-width: 840px;
 }
+.movie-list-app h1, .movie-list-app h3{
+  text-align: center;
+}
 .movie-list-app h1{
   color: #ffb703;
-  text-align: center;
 }
 .movie-list-app .error{
   color: orangered;
-  text-align: center;
 }

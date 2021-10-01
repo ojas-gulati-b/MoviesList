@@ -1,4 +1,4 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import Expansion from '../../Common/Expansion/Expansion';
 import './Movie.css';
 

@@ -9,7 +9,7 @@ const Search = (props) => {
     const searchHandler = (event) => {
         event.preventDefault();
         props.onSearch(searchInput);
-        setSearchInput('');
+        // setSearchInput('');
     }
 
     return (

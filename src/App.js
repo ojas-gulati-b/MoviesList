@@ -8,10 +8,12 @@ const App = () => {
   const [movies, setMovies] = useState([]);
   const [isLoading, setisLoading] = useState(false);
   const [error, setError] = useState('');
-  let errorElement;
+  const [initialLoad, setInitialLoad] = useState(true);
 
   const getMovies = async (param) => {
     let response, responseJson;
+
+    setInitialLoad(false);
     setisLoading(true);
     setMovies([])
     const url = `https://www.omdbapi.com/?s=${param}&apikey=50139094`;
@@ -28,7 +30,6 @@ const App = () => {
         setError('');
       }
     } catch (err) {
-      console.log(err.toString());
       setError('Something bad happened please try again');
     }
 
@@ -39,7 +40,7 @@ const App = () => {
       <div className='wrapper'>
         <h1>Find My Movie</h1>
         <Search onSearch={getMovies} />
-        {isLoading ? <Loader /> : error ? <h3 className='error'>{error}</h3> : <MovieList movies={movies} />}
+        {isLoading ? <Loader /> : error ? <h3 className='error'>{error}</h3> : <MovieList movies={movies} initialLoad={initialLoad}/>}
       </div>
     </div>
   );
