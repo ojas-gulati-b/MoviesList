@@ -8,7 +8,7 @@ const Search = (props) => {
 
     const searchHandler = (event) => {
         event.preventDefault();
-        props.onSearch(searchInput);
+        props.onSearch(searchInput.trim());
         // setSearchInput('');
     }
 
